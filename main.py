@@ -15,7 +15,7 @@ bar = st.progress(0)
 for i in range(100):
    latest_iteration.text(f'Itelation {i+1}')
    bar.progress( i+1 )
-   time.sleep(0.1)
+   time.sleep(0.01)
 
 'Done!!!!!'
 
@@ -54,12 +54,12 @@ expander.write('問い合わせ内容を書く')
 # st.table(df.style.highlight_max(axis=0))
 
 
-df = pd.DataFrame(
-   np.random.rand(100, 2)/[50, 50] + [34.53, 135.48],
-   columns=['lat', 'lon']
-)
-
-st.map(df)
+# df = pd.DataFrame(
+#    np.random.rand(100, 2)/[50, 50] + [34.53, 135.48],
+#    columns=['lat', 'lon']
+# )
+#
+# st.map(df)
 
 
 # """
